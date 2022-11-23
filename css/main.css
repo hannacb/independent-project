@@ -21,3 +21,11 @@ body {
 img {
     width: 100%;
 }
+footer {
+  background-color: #EDCBB1;
+  display:flex;
+}
+
+footer img {
+  width: 20%;
+}
