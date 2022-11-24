@@ -23,9 +23,33 @@ body {
   font-family: 'Sawarabi Gothic', sans-serif;
   background-color: #f2f2f2;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  width:100%;
+  gap:0;
+}
+header img {
+  width: 7em;
+  margin: 0 auto;
+  padding: 0;
+}
+header h1{
+  margin: 0 auto;
+  padding: 0;
+}
+main img {
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
 
 img {
     width: 100%;
+}
+h2 {
+text-align: center;
 }
 footer {
   background-color: #EDCBB1;
