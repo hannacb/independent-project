@@ -4,58 +4,38 @@
   --menu-speed: 0.75s;
 }
 html {
-  box-sizing: border-box;
-}
+    /* content stays responsive */
+    box-sizing: border-box;
+  }
+  /* adding above property to all the elements by default */
+  * {
+    box-sizing: inherit;
+  }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+  nav {
+    display: none;
+  }
+  .nav-toggle {
+    visibility: hidden;
+  }
 
-html {
-  font-size: 100%;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 25em;
-  width: 100%;
-  line-height: 1.5rem;
-  font-family: 'Sawarabi Gothic', sans-serif;
-  background-color: #f2f2f2;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-color);
-  width:100%;
-  gap:0;
-}
-header img {
-  width: 7em;
-  margin: 0 auto;
-  padding: 0;
-}
-header h1{
-  margin: 0 auto;
-  padding: 0;
-}
-main img {
-  padding-bottom: .5em;
-  padding-top: .5em;
-}
-
-img {
-    width: 100%;
-}
-h2 {
-text-align: center;
-}
-footer {
-  background-color: #EDCBB1;
-  display:flex;
-}
-
-footer img {
-  width: 20%;
-}
+  .nav-toggle:checked ~ nav {
+    display: block;
+  }
+  .nav-toggle-label {
+    display: block;
+    position: relative;
+    top: -10px;
+  }
+  @media screen and (min-width: 768px) {
+    .nav-toggle {
+      display: none;
+    }
+    .nav-toggle-label {
+      display: none;
+    }
+    nav {
+      display: block;
+    }
+  }
+  
