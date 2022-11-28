@@ -128,7 +128,7 @@ body {
     font-size: 2rem;
   }
   main img{
-    width:375px;
+    100%;
     height:249px;
     object-fit: cover;
   }
