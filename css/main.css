@@ -38,7 +38,7 @@ h2 {
   text-align: center;
 }
 .email {
-  background-color: #7D3312;
+  background-color: #EDCBB1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +51,38 @@ h2 {
 input[type=text]{
   width: 50%;
   height: 25px;
+}
+.email a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #794739;
+  padding: .5rem 1rem;
+  margin: .5rem;
+  border-radius: 30%;
+}
+.market {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr;
+  gap: .5rem;
+}
+.market h2 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.market .product {
+  background-color: #EDCBB1;
+}
+.market .product img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 .5rem;
 }
 footer {
   text-align: center;
