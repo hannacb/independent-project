@@ -6,105 +6,9 @@
 * {
   box-sizing: border-box;
 }
-html {
-  max-width: 1280px;
-  min-width: 768px;
-}
-body {
-  margin: 0px;
-  font-family: 'Sawarabi Gothic', sans-serif;
-	margin: 0 auto;
-  max-width: 1080px;
-}
-
-.nav {
-  height: 50px;
-  width: 100%;
-  position: relative;
-  padding: 1rem;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
-  color: #efefef;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: #fff;
-}
-
-.nav > #nav-check {
-  display: none;
-}
-header {
-  height: 6rem;
-  background-color: var(--overlay-color);
-}
-header nav {
-  display: flex;
-}
-header img{
-  width: 200px;
-  position: relative;
-  padding: 0;
-  margin: 0 auto;
-}
-img {
-  width:100%
-}
-h2 {
-  text-align: center;
-}
-.email{
-  background-color: var(--primary-color);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.email h2{
-  font-size: 2rem;
-}
-input[type=text]{
-  height: 50px;
-  width: 50%;
-}
-main img{
-  width:100%;
-  height:549px;
-  object-fit: cover;
-}
-
-@media (max-width:768px) {
   html {
   }
   body {
-    align-content: center;
-    max-width: 700px;
     margin: 0 auto;
   }
   .nav > .nav-btn {
@@ -186,11 +90,142 @@ main img{
     object-fit: cover;
   }
 
-  @media only screen and (min-width:375px){
+@media only screen and (min-width: 38em) {
+    }
+    body {
+      margin: 0px;
+      font-family: 'Sawarabi Gothic', sans-serif;
+    	margin: 0 auto;
+      max-width: 1080px;
+    }
+
+    .nav {
+      height: 50px;
+      width: 100%;
+      position: relative;
+      padding: 1rem;
+    }
+
+    .nav > .nav-header {
+      display: inline;
+    }
+
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 22px;
+      color: #fff;
+      padding: 10px 10px 10px 10px;
+    }
+
+    .nav > .nav-btn {
+      display: none;
+    }
+
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+    }
+
+    .nav > .nav-links > a {
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
+    }
+
+    .nav > .nav-links > a:hover {
+      background-color: #fff;
+    }
+
+    .nav > #nav-check {
+      display: none;
+    }
     html {
-      max-width: 375px;
+      box-sizing: border-box;
     }
-    header {
-    background-color: var(--overlay-color)
+
+    *, *::before, *::after {
+      box-sizing: inherit;
     }
-}
+
+    html {
+      font-size: 100%;
+    }
+
+    body {
+      margin: 0 auto;
+      max-width: 25em;
+      width: 100%;
+      line-height: 1.5rem;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      background-color: #e7e7e7;
+    }
+    header img {
+      width: 140px;
+      margin: 0 auto;
+    }
+    footer {
+      text-align: center;
+    }
+
+    @media only screen and (min-width:50em){
+
+      body {
+        max-width:48em;
+        min-width: 48em;
+      }
+      header {
+        padding: 0 1.5rem;
+    }
+    @media only screen and (min-width:80em){
+
+      body {
+        max-width:1280px;
+      }    header {
+            height: 6rem;
+            background-color: var(--overlay-color);
+          }
+          header nav {
+            display: flex;
+          }
+          header img{
+            width: 200px;
+            position: relative;
+            padding: 0;
+            margin: 0 auto;
+          }
+          img {
+            width:100%
+          }
+          h2 {
+            text-align: center;
+          }
+          .email{
+            background-color: var(--primary-color);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .email h2{
+            font-size: 2rem;
+          }
+          input[type=text]{
+            height: 50px;
+            width: 50%;
+          }
+          main img{
+            width:100%;
+            height:549px;
+            object-fit: cover;
+          }
+    }
