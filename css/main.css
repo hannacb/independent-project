@@ -6,16 +6,22 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  max-width: 1280px;
+  min-width: 768px;
+}
 body {
   margin: 0px;
   font-family: 'Sawarabi Gothic', sans-serif;
+	margin: 0 auto;
+  max-width: 1080px;
 }
 
 .nav {
   height: 50px;
   width: 100%;
   position: relative;
+  padding: 1rem;
 }
 
 .nav > .nav-header {
@@ -53,8 +59,54 @@ body {
 .nav > #nav-check {
   display: none;
 }
+header {
+  height: 6rem;
+  background-color: var(--overlay-color);
+}
+header nav {
+  display: flex;
+}
+header img{
+  width: 200px;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+}
+img {
+  width:100%
+}
+h2 {
+  text-align: center;
+}
+.email{
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.email h2{
+  font-size: 2rem;
+}
+input[type=text]{
+  height: 50px;
+  width: 50%;
+}
+main img{
+  width:100%;
+  height:549px;
+  object-fit: cover;
+}
 
-@media (max-width:600px) {
+@media (max-width:768px) {
+  html {
+  }
+  body {
+    align-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -111,8 +163,9 @@ body {
     display: flex;
   }
   header img{
-    width: 60%;
-    position:sticky;
+    width: 200px;
+    top:20;
+    position: relative;
   }
   img {
     width:100%
@@ -132,4 +185,12 @@ body {
     height:249px;
     object-fit: cover;
   }
+
+  @media only screen and (min-width:375px){
+    html {
+      max-width: 375px;
+    }
+    header {
+    background-color: var(--overlay-color)
+    }
 }
