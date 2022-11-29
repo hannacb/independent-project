@@ -14,25 +14,20 @@
 <body>
   <header>
     <section class="nav">
-      <img src="images/the-beanary.svg" alt="Beanary Logo">
-      <input type="checkbox" id="nav-check">
-      <div class="nav-header">
-        <div class="nav-title">
-        </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
+      <nav>
+        <input id="nav-toggle" type="checkbox">
+        <img src="images/the-beanary.svg" alt="beanary logo" class="logo">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="beans.html">Beans</a></li>
+          <li><a href="recipes.html">Coffee Recipes</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </label>
-      </div>
-
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="beans.html">Beans</a>
-        <a href="recipes.html">Coffee Recipes</a>
-      </div>
+      </nav>
     </section>
   </header>
   <main>
@@ -51,41 +46,53 @@
       </section>
       <section class="email">
         <h2> Keep up to date with our emails </h2>
-         <input type="text" placeholder="email address"/>
+        <input type="text" placeholder="email address"/>
         <a href="#"> Register </a>
       </section>
-      <section class="merchandise">
-        <h2> Merchansise</h2>
-        <img src="images/mug1.jpg" alt="a coffee mug">
-        <p> Coffee mug</p>
-        <p> $12</p>
-        <a href="#"> Add to cart </a>
-        <img src="images/mug2.jpg" alt="coffee mug">
-        <p> Coffee mug</p>
-        <p> $12</p>
-        <a href="#"> Add to cart </a>
-        <img src="images/mug3.jpg" alt="coffee mug">
-        <p> Coffee mug</p>
-        <p> $12</p>
-        <a href="#"> Add to cart </a>
-        <img src="images/mug4.jpg" alt="coffee mug">
-        <p> Coffee mug</p>
-        <p> $12</p>
-        <a href="#"> Add to cart </a>
-        <img src="images/mug5.jpg" alt="coffee mug">
-        <p> Coffee mug</p>
-        <p> $12</p>
-        <a href="#"> Add to cart </a>
+      <section role="reigon" class="market">
+        <div class="product">
+          <h2> Merchandise</h2>
+          <img src="images/mug1.jpg" alt="a coffee mug">
+          <p> Coffee mug</p>
+          <p> $12</p>
+          <a href="#"> Add to cart </a>
+        </div>
+        <div class="product">
+          <img src="images/mug2.jpg" alt="coffee mug">
+          <p> Coffee mug</p>
+          <p> $12</p>
+          <a href="#"> Add to cart </a>
+        </div>
+        <div class="product">
+          <img src="images/mug3.jpg" alt="coffee mug">
+          <p> Coffee mug</p>
+          <p> $12</p>
+          <a href="#"> Add to cart </a>
+        </div>
+        <div class="product">
+          <img src="images/mug4.jpg" alt="coffee mug">
+          <p> Coffee mug</p>
+          <p> $12</p>
+          <a href="#"> Add to cart </a>
+        </div>
+        <div class="product">
+          <img src="images/mug5.jpg" alt="coffee mug">
+          <p> Coffee mug</p>
+          <p> $12</p>
+          <a href="#"> Add to cart </a>
+        </div>
+        <divclass="product">
         <img src="images/mug6.jpg" alt="coffee mug">
         <p> Coffee mug</p>
         <p> $12</p>
         <a href="#"> Add to cart </a>
-      </section>
-    </main>
-    <footer>
-      <small> <p> contact us: (123) 456-7890</p></small>
-      <img src="images/fb-logo.svg" alt="a facebook logo">
-      <img src="images/insta-logo.svg" alt="an instagram logo">
-    </footer>
-  </body>
-  </html>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small> <p> contact us: (123) 456-7890</p></small>
+    <img src="images/fb-logo.svg" alt="a facebook logo">
+    <img src="images/insta-logo.svg" alt="an instagram logo">
+  </footer>
+</body>
+</html>
