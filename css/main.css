@@ -58,34 +58,64 @@ input[type=text]{
   background-color: #794739;
   padding: .5rem 1rem;
   margin: .5rem;
-  border-radius: 30%;
+  border-radius: 30px;
 }
 .market {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
   gap: .5rem;
 }
 .market h2 {
-  grid-column: 1 / span 2;
+  grid-column: 1;
   grid-row: 1;
 }
 .market .product {
   background-color: #EDCBB1;
+  text-align: center;
+  margin: 0 auto;
+  padding: .5rem;
 }
 .market .product img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
 }
 .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 .5rem;
+  margin: 0 auto;
+  padding: 0;
+  gap: 0;
+}
+.product a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #794739;
+  border-radius: 30px;
+  padding: 10px 15px 10px;
+}
+.product a:hover {
+  background-color: #4C2714;
+  transition: 0.4s ease;
 }
 footer {
   text-align: center;
+  background-color: #EDCBB1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin:.5rem 0;
+  gap:.5rem;
+}
+footer img{
+  height: 40px;
+  width: 40px;
+  padding: .5rem;
+}
+footer p {
+  font-weight: bold;
 }
 
 @media only screen and (min-width:50em){
