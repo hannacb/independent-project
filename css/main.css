@@ -172,6 +172,22 @@ footer p {
     justify-content: space-between;
     align-items: center;
   }
+  .about-history{
+    display: grid;
+    grid-auto-flow: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap:.5rem;
+  }
+  .about-us p {
+    padding-bottom: 7rem;
+  }
+  .market{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .market h2 {
+    grid-column: 1 / span 2;
+  }
   @media only screen and (min-width:991px){
 
     body {
