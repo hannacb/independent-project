@@ -92,6 +92,10 @@ input[type=text]{
   margin: .5rem;
   border-radius: 30px;
 }
+.email a:hover {
+  background-color:#4C2714;
+  transition: 0.4s ease;
+}
 .market {
   display: grid;
   grid-template-columns: 1fr;
