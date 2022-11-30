@@ -19,37 +19,52 @@
       <a href="index.html">Home</a>
       <a href="beans.html"> Beans</a>
       <a href="recipes.html">Recipes</a>
-  </nav>
-  <div class="togglebox">
-    <a onclick="showMenu()" href="#"><img class="menu" src="images/menu.png"><img  class="close" src="images/close.png"></a>
-  </div>
-  <script>
-  function showMenu(){
-    document.querySelector('.navigation').classList.toggle('active');
-    document.querySelector('.menu').classList.toggle('hide');
-    document.querySelector('.close').classList.toggle('show');
-  }
+    </nav>
+    <div class="togglebox">
+      <a onclick="showMenu()" href="#"><img class="menu" src="images/menu.png"><img  class="close" src="images/close.png"></a>
+    </div>
+    <script>
+    function showMenu(){
+      document.querySelector('.navigation').classList.toggle('active');
+      document.querySelector('.menu').classList.toggle('hide');
+      document.querySelector('.close').classList.toggle('show');
+    }
     </script>
 
-</header>
-  <main>
+  </header>
+  <main role="main">
     <img src="images/latte-pour-banner.jpg" alt="Latte art">
     <h2> Recipes </h2>
-    <h4> Flat White </h4>
-    <ul>
-      <li> Serves 1 </li>
-      <p> Recipe </p>
-      <li> Ground espresso</li>
-      <li> Milk</li>
-      <li> Sugar (Optional)</li>
-    </ul>
-    <ol>
+    <div class="recipe">
+      <img src="images/flat-white.png" alt="Flat White">
+      <h4> Flat White </h4>
+      <dl>
+        <dt> Recipe <dt>
+          <dd> Ground espresso</dd>
+          <dd> Milk</dd>
+          <dd> Sugar (Optional)</dd>
+        </dl>
+        <ol>
+          <li> Prepare 2 espresso shots with optional sugar</li>
+          <li> froth milk</li>
+          <li> pour foamed milk over espresso</li>
+        </ol>
+      </div class="recipe">
+      <div class="recipe">
+        <h4> Pumpkin Spice Latte</h4>
+        <dl>
+          <dt> Recipe</dt>
+          <dd> Milk</dd>
+          <dd> Pumpkin Puree</dd>
+          <dd> Sugar</dd>
+          <dd> Vanilla and Pumpkin Spice</dd>
+          <dd>Coffee of Choice</dd>
 
-</main>
-<footer>
-  <small> <p> contact us: (123) 456-7890</p></small>
-  <img src="images/fb-logo.svg" alt="a facebook logo">
-  <img src="images/insta-logo.svg" alt="an instagram logo">
-</footer>
-</body>
-</html>
+      </main>
+      <footer role="contentinfo">
+        <small> <p> contact us: (123) 456-7890</p></small>
+        <img src="images/fb-logo.svg" alt="a facebook logo">
+        <img src="images/insta-logo.svg" alt="an instagram logo">
+      </footer>
+    </body>
+    </html>

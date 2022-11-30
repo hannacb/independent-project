@@ -132,6 +132,10 @@ input[type=text]{
   background-color: #4C2714;
   transition: 0.4s ease;
 }
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
 footer {
   text-align: center;
   background-color: #EDCBB1;
