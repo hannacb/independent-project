@@ -12,99 +12,101 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"
 </head>
 <body>
-  <header>
-    <section class="nav">
-      <nav>
-        <input id="nav-toggle" type="checkbox">
-        <img src="images/the-beanary.svg" alt="beanary logo" class="logo">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="beans.html">Beans</a></li>
-          <li><a href="recipes.html">Coffee Recipes</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
-      </nav>
+
+  <header class="header">
+    <img src="images/the-beanary.svg" alt="logo" class="logo">
+    <nav role="nav" class="navigation">
+      <a href="index.html">Home</a>
+      <a href="beans.html"> Beans</a>
+      <a href="recipes.html">Recipes</a>
+  </nav>
+  <div class="togglebox">
+    <a onclick="showMenu()" href="#"><img class="menu" src="images/menu.png"><img  class="close" src="images/close.png"></a>
+  </div>
+  <script>
+  function showMenu(){
+    document.querySelector('.navigation').classList.toggle('active');
+    document.querySelector('.menu').classList.toggle('hide');
+    document.querySelector('.close').classList.toggle('show');
+  }
+    </script>
+
+</header>
+<main>
+  <img src="images/home-banner.jpg" alt="Coffee bean plant">
+  <section class=history>
+    <h2>History of Coffee</h2>
+    <p>Coffee has been produced for centuries across the world. The art of coffee begins in Ethiopia. This is allegedly where a goat farmer first discovered coffee beans.
+      The story then moves to the Arabian Peninsula where coffee was enjoyed at home as well as the start of coffee houses growing in popularity.</p>
+      <p>Coffee beans grow on trees and has green waxy leaves and also creates flowers. </p>
     </section>
-  </header>
-  <main>
-    <img src="images/home-banner.jpg" alt="Coffee bean plant">
-    <section class=history>
-      <h2>History of Coffee</h2>
-      <p>Coffee has been produced for centuries across the world. The art of coffee begins in Ethiopia. This is allegedly where a goat farmer first discovered coffee beans.
-        The story then moves to the Arabian Peninsula where coffee was enjoyed at home as well as the start of coffee houses growing in popularity.</p>
-        <p>Coffee beans grow on trees and has green waxy leaves and also creates flowers. </p>
-      </section>
-      <section class="about-us">
-        <h2> About Us</h2>
-        <p>The Beanery is a website which shares information about coffee in the many ways it is used. Along with recipes there is also a weekly email which goes out with special coffee events globally. There is also coffee releated merchandise. </p>
-        <img src="images/pouring-coffee.jpg" alt="coffee pouring into black mug">
-        <img src="images/beans-cup.jpeg" alt="coffee beans in glass cup">
-      </section>
-      <section class="email">
-        <h2> Keep up to date with our emails </h2>
-        <input type="text" placeholder="email address"/>
-        <a href="#"> Register </a>
-      </section>
-      <section role="reigon" class="market">
-        <h2> Merchandise</h2>
-        <div class="product">
-          <img src="images/mug1.jpg" alt="a coffee mug">
-          <div class="title">
-            <h4> Coffee Mug</h4>
-            <p class="price">$12 </p>
-          </div>
-          <a href="#"> Add to cart </a>
+    <section class="about-us">
+      <h2> About Us</h2>
+      <p>The Beanery is a website which shares information about coffee in the many ways it is used. Along with recipes there is also a weekly email which goes out with special coffee events globally. There is also coffee releated merchandise. </p>
+      <img src="images/pouring-coffee.jpg" alt="coffee pouring into black mug">
+      <img src="images/beans-cup.jpeg" alt="coffee beans in glass cup">
+    </section>
+    <section class="email">
+      <h2> Keep up to date with our emails </h2>
+      <input type="text" placeholder="email address"/>
+      <a href="#"> Register </a>
+    </section>
+    <section role="reigon" class="market">
+      <h2> Merchandise</h2>
+      <div class="product">
+        <img src="images/mug1.jpg" alt="a coffee mug">
+        <div class="title">
+          <h4> Coffee Mug</h4>
+          <p class="price">$12 </p>
         </div>
-        <div class="product">
-          <img src="images/mug2.jpg" alt="coffee mug">
-          <div class="title">
-            <h4> Coffee Mug</h4>
-            <p class="price">$12 </p>
-          </div>
-          <a href="#"> Add to cart </a>
+        <a href="#"> Add to cart </a>
+      </div>
+      <div class="product">
+        <img src="images/mug2.jpg" alt="coffee mug">
+        <div class="title">
+          <h4> Coffee Mug</h4>
+          <p class="price">$12 </p>
         </div>
-        <div class="product">
-          <img src="images/mug3.jpg" alt="coffee mug">
-          <div class="title">
-            <h4> Coffee Mug</h4>
-            <p class="price">$12 </p>
-          </div>
-          <a href="#"> Add to cart </a>
+        <a href="#"> Add to cart </a>
+      </div>
+      <div class="product">
+        <img src="images/mug3.jpg" alt="coffee mug">
+        <div class="title">
+          <h4> Coffee Mug</h4>
+          <p class="price">$12 </p>
         </div>
-        <div class="product">
-          <img src="images/mug4.jpg" alt="coffee mug">
-          <div class="title">
-            <h4> Coffee Mug</h4>
-            <p class="price">$12 </p>
-          </div>
-          <a href="#"> Add to cart </a>
+        <a href="#"> Add to cart </a>
+      </div>
+      <div class="product">
+        <img src="images/mug4.jpg" alt="coffee mug">
+        <div class="title">
+          <h4> Coffee Mug</h4>
+          <p class="price">$12 </p>
         </div>
-        <div class="product">
-          <img src="images/mug5.jpg" alt="coffee mug">
-          <div class="title">
-            <h4> Coffee Mug</h4>
-            <p class="price">$12 </p>
-          </div>
-          <a href="#"> Add to cart </a>
+        <a href="#"> Add to cart </a>
+      </div>
+      <div class="product">
+        <img src="images/mug5.jpg" alt="coffee mug">
+        <div class="title">
+          <h4> Coffee Mug</h4>
+          <p class="price">$12 </p>
         </div>
-        <div class="product">
-          <img src="images/mug6.jpg" alt="coffee mug">
-          <div class="title">
-            <h4> Coffee Mug</h4>
-            <p class="price">$12 </p>
-          </div>
-          <a href="#"> Add to cart </a>
+        <a href="#"> Add to cart </a>
+      </div>
+      <div class="product">
+        <img src="images/mug6.jpg" alt="coffee mug">
+        <div class="title">
+          <h4> Coffee Mug</h4>
+          <p class="price">$12 </p>
         </div>
-      </section>
-    </main>
-    <footer>
-      <small> <p> contact us: (123) 456-7890</p></small>
-      <img src="images/fb-logo.svg" alt="a facebook logo">
-      <img src="images/insta-logo.svg" alt="an instagram logo">
-    </footer>
-  </body>
-  </html>
+        <a href="#"> Add to cart </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small> <p> contact us: (123) 456-7890</p></small>
+    <img src="images/fb-logo.svg" alt="a facebook logo">
+    <img src="images/insta-logo.svg" alt="an instagram logo">
+  </footer>
+</body>
+</html>

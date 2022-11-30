@@ -3,13 +3,8 @@ html {
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
-
-html {
-  font-size: 100%;
-}
-
 body {
   margin: 0 auto;
   max-width: 960px;
@@ -17,22 +12,59 @@ body {
   line-height: 1.5rem;
   font-family: 'Sawarabi Gothic', sans-serif;
 }
+header {
+  background-color: #794739;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
 
-main img {
-  width: 100%;
+.logo{
+  width: 250px;
+  padding: 0;
+  margin: 0 auto;
+}
+nav.navigation {
+  display: none;
+}
+nav.navigation.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color: #4C2714;
+}
+nav.navigation.active a {
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.togglebox img {
+  filter: invert(1);
+}
+img.menu.hide {
+  display: none;
+}
+img.close{
+  display: none;
+}
+img.close.show{
+  display: flex;
+}
+main img{
+  width:100%;
   height: 250px;
   object-fit: cover;
-
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header img {
-  width: 140px;
-  margin: 0 auto;
 }
 h2 {
   text-align: center;
@@ -118,7 +150,7 @@ footer p {
   font-weight: bold;
 }
 
-@media only screen and (min-width:50em){
+@media only screen and (min-width:765px){
 
   body {
     max-width:48em;
@@ -127,10 +159,32 @@ footer p {
   header {
     padding: 0 1.5rem;
   }
-}
-@media only screen and (min-width:80em){
-
-  body {
-    max-width:1280px;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
+  @media only screen and (min-width:991px){
+
+    body {
+      max-width:960px;
+      width: 100%;
+    }
+    header {
+    background-color: #794739;
+    }
+    nav.navigation {
+      display: flex;
+    }
+    div.togglebox {
+      display: none;
+    }
+    nav.navigation a {
+      font-size: 16px;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      gap: .5rem;
+    }
+  }
