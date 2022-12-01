@@ -22,7 +22,10 @@ header {
   padding-bottom: 20px;
   align-items: center;
 }
-
+body p {
+  margin-left: 2px;
+  margin-right: 2px;
+}
 .logo{
   width: 250px;
   padding: 0;
@@ -67,7 +70,10 @@ main img{
   height: 250px;
   object-fit: cover;
 }
-h2 {
+main h2 {
+  text-align: center;
+}
+h3 {
   text-align: center;
 }
 .email {
