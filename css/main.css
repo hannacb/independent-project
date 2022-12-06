@@ -306,4 +306,13 @@ footer p {
       width:250px;
       object-fit: cover;
     }
+    .top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .bean-belt {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    }
   }
