@@ -151,6 +151,20 @@ h4 {
   font-weight: bold;
   font-size: 20px;
 }
+.recipes {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: .5rem;
+}
+.recipe {
+  background-color: #794739;
+  margin: .5rem;
+  padding: .5rem;
+}
+.recipe h4, .recipe dt, .recipe dl, .recipe li {
+  color: #fff;
+}
 footer {
   text-align: center;
   background-color: #EDCBB1;
