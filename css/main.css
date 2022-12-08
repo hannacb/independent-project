@@ -153,8 +153,8 @@ h4 {
 }
 .recipes {
   display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: .5rem;
 }
 .recipe {
@@ -234,6 +234,11 @@ footer p {
     display: flex;
     flex-direction: row;
     grid-column: 1;
+  }
+  .recipes {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
   footer {
     width:100%;
@@ -344,5 +349,10 @@ footer p {
       display: flex;
       flex-direction: column-reverse;
     }
+    .recipes {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: .5rem;
     }
   }
