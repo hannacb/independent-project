@@ -165,6 +165,9 @@ h4 {
 .recipe h4, .recipe dt, .recipe dl, .recipe li {
   color: #fff;
 }
+.beanbimg {
+  object-fit: contain;
+}
 footer {
   text-align: center;
   background-color: #EDCBB1;
