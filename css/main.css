@@ -13,6 +13,16 @@ body {
   line-height: 1.5rem;
   font-family: 'Sawarabi Gothic', sans-serif;
 }
+p {
+  font-size: 16px;
+  max-width: 500px;
+}
+img {
+  background-color: #EDCBB1;
+}
+.footer img {
+  background-color: none;
+}
 header {
   background-color: #794739;
   display: flex;
@@ -21,6 +31,9 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
+}
+header img{
+  background-color: #794739;
 }
 body p {
   margin-left: 2px;
@@ -65,11 +78,20 @@ img.close{
 img.close.show{
   display: flex;
 }
+.menu,.close {
+  background: none;
+}
 main img{
   width:100%;
   height: 250px;
   object-fit: cover;
   margin: 0 auto;
+}
+.beanbimg{
+  background-color: #fff;
+}
+.bean-belt small {
+  margin: 1rem;
 }
 main h2 {
   text-align: center;
@@ -87,7 +109,7 @@ h3 {
   margin: 0 auto;
 }
 .email h2{
-  color: #fff;
+  color: #794739;
 }
 input[type=text]{
   width: 50%;
