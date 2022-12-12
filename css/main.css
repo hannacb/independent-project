@@ -192,6 +192,7 @@ h4 {
 }
 .recipe dt, .recipe dl, .recipe li {
   font-size: 15px;
+}
 .beanbimg {
   object-fit: contain;
 }
