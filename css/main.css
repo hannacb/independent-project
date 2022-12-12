@@ -15,7 +15,8 @@ body {
 }
 p {
   font-size: 16px;
-  max-width: 500px;
+  max-width: 700px;
+padding-left: .5rem;
 }
 img {
   background-color: #EDCBB1;
@@ -27,9 +28,7 @@ header {
   background-color: #794739;
   display: flex;
   justify-content: space-between;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 1rem;
   align-items: center;
 }
 header img{
@@ -191,6 +190,8 @@ h4 {
   color: #fff;
   padding-left: .5rem;
 }
+.recipe dt, .recipe dl, .recipe li {
+  font-size: 15px;
 .beanbimg {
   object-fit: contain;
 }
@@ -211,11 +212,10 @@ footer p {
   font-weight: bold;
 }
 
-@media only screen and (min-width:775px){
+@media only screen and (min-width:760px){
 
   body {
-    max-width:48em;
-    min-width: 48em;
+    max-width: 760px;
   }
   header {
     padding: 0 1.5rem;
@@ -227,9 +227,10 @@ footer p {
   }
   .about-history{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr .7fr;
     grid-template-columns: 1fr 1fr;
     gap:.5rem;
+    padding: .5rem;
   }
   .about-us p {
     padding-bottom: 7rem;
@@ -237,6 +238,10 @@ footer p {
   .glassmug {
     grid-column: 1;
     grid-row: 2;
+  }
+  .email {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .market{
     display: grid;
@@ -281,6 +286,7 @@ footer p {
     header {
     background-color: #794739;
     margin-bottom: .5rem;
+    padding: 1rem;
   }
     .homebanner{
       width: 100%;
